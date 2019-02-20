@@ -59,6 +59,7 @@ public class RegistrationFragment extends Fragment implements RegistrationContra
     @Override
     public void onDestroy() {
         presenter.detachView();
+        unbinder.unbind();
         super.onDestroy();
     }
 
