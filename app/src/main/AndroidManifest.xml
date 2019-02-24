@@ -19,6 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".dalejjjj.DalejActivity"></activity>
+        <service android:name=".service.FirebaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
